@@ -78,27 +78,7 @@ Random Forest modeline göre hastalığı belirleyen en kritik faktörler:
 4.  **Maksimum Kalp Hızı:** Fiziksel kondisyon göstergesi.
 5.  **Kolesterol:** (Yapılan temizlik ve Feature Engineering sonrası etkisi belirginleşti).
 
-## 🚀 Kurulum ve Kullanım
 
-Proje dosyalarını çalıştırdıktan sonra sanal bir hasta için tahmin yapabilirsiniz:
-
-```python
-# Gerekli Kütüphaneler
-pip install pandas numpy seaborn matplotlib scikit-learn xgboost joblib
-```
-
-Örnek Kullanım (Model Yükleme):
-```python
-import joblib
-import pandas as pd
-
-# Kaydedilen modeli yükle
-model = joblib.load('kalp_hastaligi_modeli.pkl')
-
-# Örnek veri girişi (Scale edilmiş olmalı)
-# Tahmin yap
-sonuc = model.predict(yeni_hasta_verisi)
-```
 
 ## 👨‍💻 Yazar
 Bu proje, veri bilimi ve makine öğrenmesi teknikleri kullanılarak sağlık alanında karar destek mekanizması oluşturmak amacıyla geliştirilmiştir.
